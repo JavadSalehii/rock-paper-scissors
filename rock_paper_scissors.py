@@ -59,10 +59,10 @@ computer = random.randint(0, 2)
 try:
     user = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors\n"))
     if user not in [0,1 ,2]:
-        print("Invalid Choice!")
+        print("Invalid choice!")
         exit()
 except ValueError:
-    print("Please Enter a Number!")
+    print("Please enter a number!")
     exit()
 
 print(f"Your choice:\n\n{art[user]}")
@@ -77,4 +77,5 @@ else:
             break
         elif rps_moves[computer] == win[0] and rps_moves[user] == win[1]:
             print("Computer Won!")
+
             break
